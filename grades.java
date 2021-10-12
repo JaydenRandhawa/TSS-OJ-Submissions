@@ -4,6 +4,7 @@ class Main {
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
         int grade = Integer.parseInt(inp.nextLine());
+        inp.close();
 
         if(grade < 50){
             System.out.println("Level R");
