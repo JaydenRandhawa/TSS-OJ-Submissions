@@ -37,5 +37,7 @@ public class trisquare {
         for(int i = 0;i<width;i++){
             System.out.print("*");
         }
+
+        scan.close();
     }
 }

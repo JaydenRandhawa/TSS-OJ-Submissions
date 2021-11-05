@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner; 
 
 class vowelCounter {
@@ -16,5 +15,7 @@ class vowelCounter {
         }
 
         System.out.println(vowelCount);
+
+        inp.close();
     }
   }
