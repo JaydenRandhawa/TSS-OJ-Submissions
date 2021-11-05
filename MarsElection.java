@@ -51,6 +51,7 @@ public class MarsElection {
             seatsRemain -= 1;
             
         }
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
         for(int i=0;i<partyCount;i++){
             System.out.println(seats.get(i));
