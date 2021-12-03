@@ -10,18 +10,18 @@ public class theQuadraticEquation {
         float b = inp.nextFloat();
         float c = inp.nextFloat();
 
-        double discriminate = Math.pow(b, 2)-4*a*c;
+        double discriminant = Math.pow(b, 2)-4*a*c;
 
-        if(discriminate < 0){
+        if(discriminant < 0){
             System.out.println("No real roots.");
         }
-        else if(discriminate == 0){
+        else if(discriminant == 0){
             System.out.println("One real root.");
         }
-        else if(discriminate > 0){
+        else if(discriminant > 0){
 
-            double root1 = Double.parseDouble(df.format((-b+Math.sqrt(discriminate))/(2*a)));
-            double root2 = Double.parseDouble(df.format((-b-Math.sqrt(discriminate))/(2*a)));
+            double root1 = Double.parseDouble(df.format((-b+Math.sqrt(discriminant))/(2*a)));
+            double root2 = Double.parseDouble(df.format((-b-Math.sqrt(discriminant))/(2*a)));
 
             if((root1*100)%10 == 0){
                 root1 = (root1*100)/10;
