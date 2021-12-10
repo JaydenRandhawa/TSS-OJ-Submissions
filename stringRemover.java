@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class stringRemover {
     public static void main(String[] args) {
@@ -7,10 +7,19 @@ public class stringRemover {
         String sentence = inp.nextLine();
         String str = inp.nextLine();
 
-        sentence = sentence.replace(" " + str + " ", " ");
+        while(sentence.contains(" " + str + " ")){
+            sentence = sentence.replace(" " + str + " ", " ");
+        }
 
-        if (sentence.endsWith(" " + str)){
-            sentence = sentence.replace(" " + str, "");
+        if(sentence.endsWith(" " + str)){
+            sentence = sentence.substring(0, sentence.length() - (str.length()+1));
+        }
+        if(sentence.startsWith(str + " ")){
+            sentence = sentence.substring(str.length() + 1, sentence.length());
+        }
+
+        if(sentence.equals(str)){
+            sentence = "";
         }
 
         System.out.println(sentence);
