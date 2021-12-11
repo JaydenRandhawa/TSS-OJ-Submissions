@@ -5,6 +5,7 @@ public class necklaceProblem {
         
         int sequenceCount = inp.nextInt();
 
+
         for(int i=0; i<sequenceCount;i++){
 
             int num1 = inp.nextInt();
@@ -16,17 +17,13 @@ public class necklaceProblem {
 
             System.out.print(num1 + " " + num2 + " ");
 
-            sum = pos1+pos2;
-            pos1 = pos2%10;
-            pos2 = sum%10;
-            System.out.print(pos2 + " ");
-
-            while(pos1 != num1 || pos2 != num2){
+            do {
                 sum = pos1+pos2;
                 pos1 = pos2%10;
                 pos2 = sum%10;
                 System.out.print(pos2 + " ");
             }
+            while(pos1 != num1 || pos2 != num2);
             System.out.println();
 
         }
